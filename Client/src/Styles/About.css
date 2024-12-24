@@ -1,0 +1,61 @@
+.about-page {
+  font-family: var(--main-font);
+  color: var(--text-border);
+  line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.about-hero {
+  text-align: center;
+  padding: 70px 0;
+  background: var(--bg-other);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 60px;
+}
+
+.about-hero h1 {
+  margin: 0;
+  color: var(--text-border);
+}
+
+.about-hero p {
+  margin: 10px 0 0;
+  color: var(--text-border);
+  font-family: var(--scnd-font);
+}
+
+.about-description,
+.about-mission,
+.about-community{
+  margin-bottom: 50px;
+}
+
+.about-team {
+  margin-bottom: 80px;
+}
+
+.about-description h2,
+.about-mission h2,
+.about-community h2,
+.about-team h2 {
+  color: var(--text-border);
+  border-bottom: 2px solid rgba(11, 91, 91, 0.5);
+  padding-bottom: 7px;
+}
+
+.about-description p,
+.about-mission p,
+.about-community p,
+.about-team p {
+  text-align: justify;
+  margin-top: 15px;
+  font-family: var(--scnd-font);
+  font-weight: 300;
+  letter-spacing: var(--spacing);
+}
+
+/* Additional styling */
+/* ... */

@@ -1,0 +1,351 @@
+.settings-container {
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    background-color: var(--bg-other);
+  }
+
+.full-container {
+  display: flex;
+  width: 100%;
+  max-width: 1000px; 
+  margin: 0 auto; 
+  box-shadow: 1px 5px 3px rgba(19, 105, 105, 0.2);
+  border-radius: 25px;
+  overflow: hidden;
+  min-height: 650px;
+}
+
+.sidebar {
+  z-index: 3;
+  max-width: 400px;
+  width: 50%;
+  background-color: white;
+  padding: 0;
+  border-right: 1px solid rgba(0, 121, 111, 0.5);
+  box-shadow:  3px 0 12px -5px rgba(0, 121, 111, 0.32);
+}
+
+  .sidebar h2 {
+    padding: 50px 60px 30px;
+    text-align: center;
+    font-size: 33px;
+    letter-spacing: var(--spacing);
+    
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .selected-li{
+    background-image: linear-gradient(to right, rgba(112,144,139, 0.3), white);
+    font-weight: bold;
+  }
+  
+  .selected-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-self: flex-start;
+    width: 7px;
+    height: 100%;
+    background-color: rgba(112,144,139, 1.0);
+  }
+  
+  .sidebar li{
+    color: var(--text-border);
+    letter-spacing: var(--spacing);
+    display: flex;
+    font-family: var(--scnd-font);
+    min-height: 20px;
+    padding:15px 40px;
+    cursor: pointer;
+    font-size: 20px;
+    height: 100%;
+    margin-bottom: 15px;
+    position: relative;
+  }
+
+.unselected-option{
+    display:none;
+}
+.selected-option{
+  display: block;
+}
+  
+#Account, #Password, #Privacy, #Help {
+  font-family: var(--scnd-font);
+  width:100%;
+  padding: 30px 40px;
+  background-color: #ffffff;
+}
+  
+  #Account h2, #Password h2, #Privacy h2, #Help h2 {
+    margin-top: 40px;
+    font-family: var(--main-font);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    letter-spacing: var(--spacing);
+  }
+  
+  .top-part{
+    display: flex;
+  }
+  
+  .person-info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+  
+  .full-name{
+    font-family: var(--scnd-font);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: var(--spacing);
+  }
+
+.skills{
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+  
+ .basic-info h3{
+   padding-bottom: 20px;
+   margin: 0;
+   border-bottom: 1px solid rgba(7, 72, 74, 0.4);
+   color: rgba(7, 72, 74, 0.8);
+  }
+  
+  .profile-picture-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+  
+  .profile-picture-section img {
+    width: 110px;  
+    height: 110px;
+    border-radius: 50%;  
+    object-fit: cover;   
+  }
+  
+.Above-img{
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  position:absolute;
+}
+
+.Above-img:hover{
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.20);
+}
+.pen-icon-pfp{
+  display: none;
+  position: absolute;
+  color:white;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+.Above-img:hover .pen-icon-pfp{
+  display: block;
+}
+
+.name-f-l{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(7, 72, 74, 0.4);
+  }
+  
+  .div-name{
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+    align-items: center;
+    padding: 0 10px;
+  }
+  
+  .basic-info p {
+    color: rgba(7, 72, 74, 0.8);
+    display: block;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: var(--spacing);
+    white-space: nowrap;
+  }
+  
+  .basic-info input {
+    display: block;
+    width: 100%;
+    padding: 9px 10px;
+    margin-top: 5px;
+    border: 1px solid var(--text-border);
+    background-color: rgba(245, 245, 245, 0.6);
+    border-radius: 5px;
+    color: rgba(7, 72, 74, 0.7);
+    font-size: 15px;
+  }
+  
+  .subtitle-h3, .full-name{
+    color: rgba(7, 72, 74, 0.8);
+  }
+  
+  /*email and password*/
+
+.email-pass{
+  display: flex;
+  gap: 13px;
+  padding: 13px;
+  border-bottom: 1px solid rgba(7, 72, 74, 0.4);
+}
+
+input.input-pass{
+  border: none;
+  background-color: white;
+  letter-spacing: var(--spacing);
+  width: fit-content;
+  outline: none;
+  cursor: default;
+  margin-left: 25px;
+}
+
+button.confirm-button{
+  background-color: #07484a;
+  color: white;
+  padding: 12px 0;
+  letter-spacing: var(--spacing);
+  border-radius: 30px;
+}
+
+button.confirm-button:disabled{
+  cursor: default;
+  background-color: rgba(11, 91, 91, 0.3);
+}
+
+/*password tab*/
+
+.pass-desc{
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0.4px;
+}
+
+.pass-labels{
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: var(--spacing);
+  margin-bottom: 5px;
+}
+
+.pass-inputs{
+  width: 100%;
+  padding: 7px 20px;
+  margin-top: 5px;
+  border: 1px solid var(--text-border);
+  background-color: rgba(245, 245, 245, 0.6);
+  border-radius: 5px;
+  color: rgba(7, 72, 74, 0.7);
+  font-size: 15px;
+  box-sizing: border-box;
+}
+.pass-inputs:read-only{
+  cursor: default;
+}
+
+.check-disc{
+  padding: 30px 0;
+}
+
+.check-box{
+  width: 45px;
+  height: 18px;
+  border: 1px solid #8e8e8e;
+  background-color: rgba(229, 229, 229, 0.4);
+  border-radius: 10px;
+}
+
+.check-circle{
+  width: 20px;
+  height: 20px;
+  background-color: #aeaeae;
+  border-radius: 50%;
+  text-align: center;
+  font-family: var(--scnd-font);
+  color:white;
+}
+
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    max-width: none;
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 121, 111, 0.5);
+    box-shadow: none;
+  }
+
+  .sidebar h2 {
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  .sidebar li {
+    padding: 15px 20px;
+    font-size: 14px;
+  }
+
+  .full-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #Account, #Password, #Privacy, #Help {
+    padding: 20px;
+  }
+
+  .profile-picture-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-picture-section img {
+    margin-bottom: 20px;
+  }
+
+  .person-info {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .basic-info {
+    padding: 20px 0;
+  }
+
+  .basic-info input {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .email-pass, .old-pass, .new-pass {
+    flex-direction: column;
+  }
+
+  .email-pass, .old-pass, .new-pass, .check-disc {
+    padding: 20px 0;
+  }
+
+  .check-disc {
+    border-bottom: 1px solid rgba(7, 72, 74, 0.4);
+  }
+}

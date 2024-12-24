@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+:root {
+  /* Color Variables */
+  --text-border: rgb(11, 91, 91); /* For text and borders */
+  --bg-60: #0b5b4399; /* For some backgrounds with 60% opacity */
+  --text-button: #f8ffff; /* For text on 0B4B43 background and button background */
+  --bg-other: #e2f2e3; /* For other backgrounds */
+  --main-bg: #ffffff;
+  --light-color: #F1F5F2; /* light color */
+  --main-font: "Playfair Display", serif;
+  --scnd-font: "Roboto", sans-serif;
+  --logo-font: "Roboto Slab";
+  --spacing: 0.5px;
+}
+
+body {
+  width:100%;
+  margin: 0;
+  font-family: var(--main-font);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  color: var(--text-border);
+}
+
+a {
+  text-decoration: underline;
+}
+
+.border {
+  border-color: var(--text-border);
+}
+
+.bg-60 {
+  background-color: var(--bg-60);
+}
+
+button {
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: 130px !important;
+  cursor: pointer;
+  outline: none !important;
+  border: none;
+}

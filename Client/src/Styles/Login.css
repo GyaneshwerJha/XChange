@@ -1,0 +1,311 @@
+/* Login.css */
+.login-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-other);
+  width: 100%;
+}
+
+.login-container {
+  display: flex;
+  width: 70%;
+  margin: 5%;
+  border-radius: 20px;
+}
+
+.login-banner {
+  width: 45%;
+  background-color: var(--bg-60);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 20px 0 0 20px;
+}
+
+.login-form-container {
+  padding: 80px 10px;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--main-bg);
+  border-radius: 0 20px 20px 0;
+}
+
+.brand-logo img {
+  max-width: 270px;
+}
+
+.labels, label{
+  font-family: var(--scnd-font);
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-text h2,
+.banner-text p {
+  color: var(--text-button);
+  text-align: center;
+}
+
+.banner-text button {
+  background-color: rgba(255, 255, 255, 0.31);
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 12px 0;
+  cursor: pointer;
+  letter-spacing: var(--spacing);
+  font-weight: bold;
+}
+
+
+.banner-text button:hover {
+  background-color: var(--bg-other);
+  color: var(--text-border);
+  border: 2px solid var(--text-border);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+  padding: 50px 50px;
+  border-radius: 20px;
+}
+
+.login-form > * {
+  width: 100%;
+}
+
+.login-form h1 {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.banner-text h5 {
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  font-size: 12px;
+  font-family: var(--scnd-font);
+  letter-spacing: var(--spacing);
+  margin: 0 0 35%;
+}
+
+.subtitle{
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  font-size: 12px;
+  font-family: var(--scnd-font);
+  letter-spacing: var(--spacing);
+  margin: 0 0 30%;
+}
+
+.form-field {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 13px;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #07484a;
+  letter-spacing: var(--spacing);
+}
+
+.form-field input[type="text"],
+.form-field input[type="password"] {
+  width: 100%;
+  padding: 18px 10px;
+  border: 1px solid var(--text-border);
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-sizing: border-box;
+  letter-spacing: var(--spacing);
+  font-size: 14px;
+}
+
+.form-remember {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.form-remember input[type="checkbox"] {
+  margin-right: 5px;
+  margin-bottom: 1px;
+}
+
+.login-form button {
+  background-color: var(--text-border);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: #ffffff !important;
+  border: none;
+  padding: 14px 0;
+  cursor: pointer;
+  letter-spacing: var(--spacing);
+  border: #07484a;
+}
+
+.login-form button:hover {
+  background-color: var(--bg-60);
+}
+
+.form-field input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  padding: 12px 20px;
+  cursor: pointer;
+  background-color: var(--text-border);
+  color: #ffffff !important;
+  border-radius: 10px;
+  font-family: var(--scnd-font);
+  letter-spacing: var(--spacing);
+  border: none; /* Adjust according to your design */
+  margin-top: 5px;
+}
+
+.custom-file-upload:hover {
+  background-color: var(--bg-60);
+}
+
+.file-name {
+  color: var(--text-button);
+  margin-top: 5px;
+  font-size: 12px; /* Adjust font size as needed */
+}
+
+.signup-buttons{
+  display: flex;
+  justify-content: space-between;
+}
+
+.previous-button{
+  background-color: rgba(11, 91, 91, 0.55) !important;
+  display: flex;
+  text-align: center;
+}
+
+.previous-button:hover{
+  background-color: rgba(11, 91, 91, 0.75) !important;
+}
+
+.skills-h4{
+  font-family: var(--scnd-font);
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--text-border) ;
+}
+
+.previous-button svg{
+  padding-left: 10px;
+  color: white;
+  margin-right: 20px;
+}
+
+.next-button{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* General styles for smaller screens */
+@media (max-width: 1024px) {
+  .login-container {
+    width: 90%; 
+    flex-direction: column; 
+  }
+
+  .login-banner,
+  .login-form-container {
+    width: 90%; 
+    border-radius: 20px; 
+  }
+
+  .login-banner {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .login-form-container {
+    border-radius: 0 0 20px 20px;
+    padding: 40px 20px; 
+  }
+
+  .login-form {
+    padding: 30px 20px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-text h2,
+  .banner-text p,
+  .banner-text button,
+  .login-form h1 {
+    margin: 20px 0;
+  }
+
+  .form-field label,
+  .form-field input,
+  .login-form button {
+    font-size: 12px; 
+  }
+
+  .form-field input[type="text"],
+  .form-field input[type="password"],
+  .custom-file-upload,
+  .form-field input[type="file"] {
+    padding: 12px 10px;
+  }
+
+  .custom-file-upload,
+  .login-form button {
+    padding: 10px 0; 
+  }
+}
+
+@media (max-width: 480px) {
+  .form-field {
+    margin-bottom: 10px; 
+  }
+
+  .banner-text,
+  .login-form {
+    padding: 20px; 
+  }
+
+  .banner-text h2,
+  .banner-text p {
+    font-size: 16px; 
+  }
+
+  .signup-buttons {
+    flex-direction: column; 
+    align-items: stretch; 
+  }
+
+  .next-button,
+  .previous-button {
+    width: 100%; 
+    margin: 10px 0; 
+  }
+}
