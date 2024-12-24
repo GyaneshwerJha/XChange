@@ -9,7 +9,16 @@
     "routes": [
         {
             "src":  "/(.*)",
-            "dest": "/"
+            "dest": "server.js"
         }
-    ]
+    ],
+    "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "https://x-change-frontend.vercel.app" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET, POST, OPTIONS" }
+      ]
+    }
+  ]
 }
