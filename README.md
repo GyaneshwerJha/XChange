@@ -1,3 +1,7 @@
+- **Demo Login**  
+email : gyaneshwer.0001@gmail.com
+password : gyaneshwer.0001@gmail.com
+
 # **XChange - Skill Exchange and Learning Platform**
 
 XChange is a skill exchange and collaborative learning platform where users can connect, share knowledge, and grow together. The application empowers users to create personalized learning experiences by connecting learners and teachers, facilitating real-time communication, and fostering a supportive community.
